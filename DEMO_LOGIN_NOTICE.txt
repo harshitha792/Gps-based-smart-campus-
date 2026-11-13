@@ -1,0 +1,11 @@
+REVA SMART CAMPUS — DEMO LOGIN MODE
+
+This build uses a LOCAL DEMO login, not real authentication.
+- Enter any syntactically valid email address.
+- Enter any password with at least 8 characters.
+- No account registration, email confirmation, Supabase Auth, or Google OAuth is required.
+- The session is stored in this browser's localStorage. Sign Out clears it.
+- This is only for a classroom/demo environment. It does NOT verify identity or protect private data.
+- Do not deploy this mode publicly or use it for real student/staff records.
+
+Supabase project configuration and publishable API key are retained because other campus features may still use the Supabase database/API. The login screen no longer calls Supabase Auth.

@@ -1,0 +1,8 @@
+CREATE OR REPLACE FUNCTION public.campus_capability(cap text) RETURNS boolean LANGUAGE sql STABLE SECURITY DEFINER SET search_path=public AS $$ SELECT EXISTS(SELECT 1 FROM public.campus_permissions WHERE user_id=auth.uid() AND capability IN (cap,'admin')) OR (cap='faculty' AND public.has_role(auth.uid(),'campus_manager')) $$;
+CREATE POLICY "admins read profiles" ON public.profiles FOR SELECT TO authenticated USING(public.campus_capability('admin'));
+CREATE POLICY "admins manage capabilities" ON public.campus_permissions FOR ALL TO authenticated USING(public.campus_capability('admin')) WITH CHECK(public.campus_capability('admin'));
+GRANT INSERT,UPDATE,DELETE ON public.campus_permissions TO authenticated;
+CREATE POLICY "admins read roles" ON public.user_roles FOR SELECT TO authenticated USING(public.campus_capability('admin'));
+CREATE POLICY "admins manage roles" ON public.user_roles FOR ALL TO authenticated USING(public.campus_capability('admin')) WITH CHECK(public.campus_capability('admin'));
+GRANT INSERT,UPDATE,DELETE ON public.user_roles TO authenticated;
+CREATE FUNCTION public.guard_notification_update() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$ BEGIN IF (NEW.id,NEW.user_id,NEW.title,NEW.body,NEW.kind,NEW.created_at) IS DISTINCT FROM (OLD.id,OLD.user_id,OLD.title,OLD.body,OLD.kind,OLD.created_at) THEN RAISE EXCEPTION 'Only notification read status can change'; END IF; RETURN NEW; END $$; CREATE TRIGGER guard_notification_update BEFORE UPDATE ON public.campus_notifications FOR EACH ROW EXECUTE FUNCTION public.guard_notification_update();

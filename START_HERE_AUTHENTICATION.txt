@@ -1,0 +1,11 @@
+REVA SMART CAMPUS — EMAIL/PASSWORD AUTHENTICATION
+
+1. The login page now uses email address and password only. Google sign-in has been removed from the UI.
+2. Create an account using Create Campus Account, then confirm the email if Supabase email confirmation is enabled.
+3. Sign in with the registered email address and password.
+4. Forgot password sends a Supabase password-reset email.
+5. Supabase Auth is retained because this project already uses Supabase for its user sessions and protected campus routes.
+6. In Supabase Dashboard → Authentication → Sign In / Providers, enable Email. Google can remain disabled.
+7. In Authentication → URL Configuration, allow the local app URL printed by Vite (for example http://localhost:8080/**).
+
+No Google OAuth Client ID, Google Client Secret, or Google Cloud Console configuration is required for this build.

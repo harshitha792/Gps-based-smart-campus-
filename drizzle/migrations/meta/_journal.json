@@ -1,0 +1,76 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794494593689,
+      "tag": "0000_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794575282147,
+      "tag": "0001_campus_accounts_and_management",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794575904916,
+      "tag": "0002_event_rsvps",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794576673296,
+      "tag": "0003_campus_notices_notifications",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794576789841,
+      "tag": "0004_campus_service_workflows",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794576973501,
+      "tag": "0005_campus_ai_and_id",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794577142504,
+      "tag": "0006_campus_operations_inventory",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794577221261,
+      "tag": "0007_strict_campus_capabilities",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1794577475653,
+      "tag": "0008_private_reporters_and_schedule_management",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1794578650754,
+      "tag": "0009_campus_registration_details",
+      "breakpoints": true
+    }
+  ]
+}

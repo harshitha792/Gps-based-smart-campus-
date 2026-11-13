@@ -1,0 +1,31 @@
+# Refinement tasks
+- [x] Make all screens dark; add labelled starter examples to complaints, feedback, timetable, notices and notifications, assistant prompts and a non-validating ID preview.
+- [x] Save full name and student SRN / teacher registration / staff ID on signup and My Account; registration save/reload and mobile layouts verified; signup field switching verified, confirmation delivery remains unverified.
+- [x] Show student/teacher/staff choices on sign-in and registration; separate shared services from approved management navigation and show saved access in My Account.
+- [x] Add light-default theme, persistent notification history/read status, digital notices and all new page navigation.
+- [x] Add report/photo storage, complaint category suggestions, management progress/assignment, resolution ratings, lost/found claims and feedback; complaint save/reload verified.
+- [x] Add approved resource inventory, conflict-safe booking/cancellation, personal/faculty/exam schedules and in-app reminders; timetable save/reload verified.
+- [x] Add one ongoing English/Kannada AI assistant with saved history; real English/Kannada follow-up and reload verified.
+- [x] Add approval-gated digital ID requests, protected verification/history, security incident response records and emergency notice publishing.
+- [x] Add verified location/accessibility and manual parking inventory management, verified map pins and permission-scoped saved-data charts.
+- [ ] Verify administrative publishing, resource booking conflicts, claim review, ID approval and security workflows: blocked by no designated approved administrator/security account and empty official resource inventory.
+- [ ] Complete official campus operation: verified resources, schedules, route/accessibility data, security contacts and live occupancy/sensor sources are required; no invented official data.
+- [ ] Configure unattended reminders, external emergency delivery, live sensor occupancy/crowd predictions: awaiting authorized integration/service information.
+- [x] Add camera QR capture with permission-denial fallback; authorized camera verification still awaits an approved security account.
+- [ ] Full AI classification/recommendations, timetable administration and fuller analytics remain unfinished; administrative integration awaits a designated approved administrator and official data.
+- [x] Add persistent RSVP/cancellation for published events, unique member/event registrations, My registrations filter, and protected attendee lists; signed-in reservation/reload/cancellation and mobile checks passed, 13 tests passed.
+- [ ] Verify organizer attendee lists with an approved organizer session: awaiting the user's designated approved faculty/staff account; no privileged account currently provisioned.
+- [x] Add saved student/teacher/staff account types and protected event publishing/attendance review tools; visitors excluded.
+- [ ] Activate management for verified faculty/staff: awaiting the user's designated approved account; nobody receives management privileges through signup.
+- [x] Enlarge parking spaces to numbered 80 px-high selectable tiles; signed-in desktop/mobile checks passed without overflow.
+- [x] Expand sample events to 15, including four hackathons; filters/details verified, 13 regression tests passed, automatic compilation successful.
+- [x] Match Find Places uploads, improve selection/search/filters, and pass selected place context to map without unverified pins; update only requested Horizon highlight images. Signed-in desktop/mobile checks and six regression tests passed.
+- [x] Correct Horizon aerial/library highlight photos; verify matching cover crops, desktop/mobile spacing, and missing/failed image fallback while signed in.
+- [x] Complete Campus Parking highlight using earlier aerial as explicitly reassigned by the user; last upload now represents REVA Campus.
+- [x] Refine compact typography, authentication presentation, and shared navigation.
+- [x] Update Horizon banner, parking photo, and campus highlights.
+- [x] Add actual-location map recentering and permission states; retain configured attendance zone without inventing building pins.
+- [x] Verify public authentication controls, signed-in dashboard/map flows, mobile layouts, six tests, and automatic compilation.
+- [ ] Verified individual building locations and surveyed boundary: awaiting authoritative campus data; existing 500 m attendance zone is retained and labelled.
+- [ ] Complete Google OAuth, new email/password login, confirmation delivery and password-reset delivery: awaiting interactive provider/email verification; existing handlers/settings untouched.
+- [ ] Official logo: awaiting original upload. Entrance photo supplied; authentic library interior sourced from the official gallery.
